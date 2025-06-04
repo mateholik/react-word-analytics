@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import Warning from './Warning';
 
-export default function Textarea() {
-  const [value, setValue] = useState('');
+export default function Textarea({ text, setText }) {
   const [warningText, setWarningText] = useState('');
   const handleChange = (event) => {
     let newValue = event.target.value;
@@ -17,13 +16,13 @@ export default function Textarea() {
       setWarningText('');
     }
 
-    setValue(newValue);
+    setText(newValue);
   };
   return (
     <div className='textarea'>
       <textarea
         placeholder='Enter your text'
-        value={value}
+        value={text}
         onChange={handleChange}
         spellCheck='false'
       />
