@@ -5,6 +5,8 @@ export default function Stats({ stats }) {
       <Stat label='Characters' number={stats.textCharactersAmount} />
       <Stat label='Instagram' number={stats.instagramCharactersLeft} />
       <Stat label='Facebook' number={stats.facebookCharactersLeft} />
+      <Stat label='Read time (seconds)' number={stats.readTimeInSeconds} />
+      <Stat label='Read time' number={stats.facebookCharactersLeft} />
     </section>
   );
 }
