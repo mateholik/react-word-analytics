@@ -3,10 +3,10 @@ export default function Stats({ stats }) {
     <section className='stats'>
       <Stat label='Words' number={stats.textWordssAmount} />
       <Stat label='Characters' number={stats.textCharactersAmount} />
+      <Stat label='Read time' number={stats.facebookCharactersLeft} />
       <Stat label='Instagram' number={stats.instagramCharactersLeft} />
       <Stat label='Facebook' number={stats.facebookCharactersLeft} />
-      <Stat label='Read time (seconds)' number={stats.readTimeInSeconds} />
-      <Stat label='Read time' number={stats.facebookCharactersLeft} />
+      <Stat label='LinkedIn' number={stats.linkedinCharactersLeft} />
     </section>
   );
 }
